@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,37 +13,37 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: #f5f7fa;
             color: #333;
             padding: 20px;
             line-height: 1.6;
         }
-        
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
         }
-        
+
         header {
             text-align: center;
             margin-bottom: 30px;
             padding-bottom: 20px;
             border-bottom: 1px solid #e1e4e8;
         }
-        
+
         h1 {
             color: #2c3e50;
             margin-bottom: 10px;
         }
-        
+
         .description {
             color: #7f8c8d;
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .controls {
             background-color: white;
             border-radius: 10px;
@@ -50,39 +51,40 @@
             margin-bottom: 30px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
-        
+
         .controls h2 {
             margin-bottom: 20px;
             color: #3498db;
         }
-        
+
         .form-row {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
             margin-bottom: 15px;
         }
-        
+
         .form-group {
             flex: 1;
             min-width: 200px;
         }
-        
+
         label {
             display: block;
             margin-bottom: 5px;
             font-weight: 600;
             color: #2c3e50;
         }
-        
-        input, select {
+
+        input,
+        select {
             width: 100%;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
             font-size: 16px;
         }
-        
+
         button {
             padding: 12px 24px;
             background-color: #3498db;
@@ -96,56 +98,56 @@
             margin-right: 10px;
             margin-bottom: 10px;
         }
-        
+
         button:hover {
             background-color: #2980b9;
         }
-        
+
         .btn-delete {
             background-color: #e74c3c;
         }
-        
+
         .btn-delete:hover {
             background-color: #c0392b;
         }
-        
+
         .btn-secondary {
             background-color: #95a5a6;
         }
-        
+
         .btn-secondary:hover {
             background-color: #7f8c8d;
         }
-        
+
         .btn-success {
             background-color: #2ecc71;
         }
-        
+
         .btn-success:hover {
             background-color: #27ae60;
         }
-        
+
         .btn-warning {
             background-color: #f39c12;
         }
-        
+
         .btn-warning:hover {
             background-color: #d35400;
         }
-        
+
         .charts-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
             margin-bottom: 30px;
         }
-        
+
         @media (max-width: 1100px) {
             .charts-container {
                 grid-template-columns: 1fr;
             }
         }
-        
+
         .chart-wrapper {
             background-color: white;
             border-radius: 10px;
@@ -153,19 +155,19 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             margin-bottom: 20px;
         }
-        
+
         .chart-title {
             margin-bottom: 15px;
             color: #2c3e50;
             text-align: center;
         }
-        
+
         .chart-container {
             position: relative;
             height: 400px;
             width: 100%;
         }
-        
+
         .summary-container {
             background-color: white;
             border-radius: 10px;
@@ -173,49 +175,51 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             margin-top: 30px;
         }
-        
+
         .summary-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 15px;
         }
-        
-        .summary-table th, .summary-table td {
+
+        .summary-table th,
+        .summary-table td {
             padding: 12px 15px;
             text-align: right;
             border-bottom: 1px solid #e1e4e8;
         }
-        
+
         .summary-table th {
             background-color: #f8f9fa;
             font-weight: 600;
             color: #2c3e50;
         }
-        
-        .summary-table td:first-child, .summary-table th:first-child {
+
+        .summary-table td:first-child,
+        .summary-table th:first-child {
             text-align: left;
         }
-        
+
         .total-row {
             font-weight: 700;
             background-color: #f8f9fa;
         }
-        
+
         .month-header {
             font-weight: 600;
             color: #3498db;
         }
-        
+
         @media (max-width: 768px) {
             .chart-container {
                 height: 300px;
             }
-            
+
             .form-row {
                 flex-direction: column;
             }
         }
-        
+
         .notification {
             position: fixed;
             top: 20px;
@@ -229,27 +233,27 @@
             transform: translateX(100px);
             transition: opacity 0.3s, transform 0.3s;
         }
-        
+
         .notification.show {
             opacity: 1;
             transform: translateX(0);
         }
-        
+
         .notification.success {
             background-color: #2ecc71;
         }
-        
+
         .notification.error {
             background-color: #e74c3c;
         }
-        
+
         .actions {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
             margin-top: 20px;
         }
-        
+
         .legend {
             display: flex;
             justify-content: center;
@@ -257,34 +261,34 @@
             gap: 10px;
             margin-top: 15px;
         }
-        
+
         .legend-item {
             display: flex;
             align-items: center;
             font-size: 14px;
         }
-        
+
         .legend-color {
             width: 15px;
             height: 15px;
             border-radius: 3px;
             margin-right: 5px;
         }
-        
+
         .no-data {
             text-align: center;
             padding: 40px;
             color: #7f8c8d;
             font-style: italic;
         }
-        
+
         .import-section {
             background-color: #f8f9fa;
             padding: 15px;
             border-radius: 5px;
             margin-top: 20px;
         }
-        
+
         .file-input {
             padding: 10px;
             border: 2px dashed #3498db;
@@ -293,7 +297,7 @@
             margin-bottom: 10px;
             width: 100%;
         }
-        
+
         .data-actions {
             display: flex;
             justify-content: center;
@@ -301,7 +305,7 @@
             margin-top: 20px;
             flex-wrap: wrap;
         }
-        
+
         .current-category-info {
             background-color: #e8f4fc;
             padding: 15px;
@@ -309,7 +313,7 @@
             margin-bottom: 20px;
             text-align: center;
         }
-        
+
         .category-stats {
             display: flex;
             justify-content: center;
@@ -317,30 +321,32 @@
             flex-wrap: wrap;
             margin-top: 10px;
         }
-        
+
         .stat-item {
             text-align: center;
         }
-        
+
         .stat-value {
             font-size: 24px;
             font-weight: bold;
             color: #2c3e50;
         }
-        
+
         .stat-label {
             font-size: 14px;
             color: #7f8c8d;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>Sistema de Gráficos de Despesas</h1>
-            <p class="description">Gerencie suas despesas mensais por categoria. Visualize gráficos da categoria selecionada e um consolidado de todas as categorias.</p>
+            <p class="description">Gerencie suas despesas mensais por categoria. Visualize gráficos da categoria
+                selecionada e um consolidado de todas as categorias.</p>
         </header>
-        
+
         <div class="controls">
             <h2>Gerenciar Categorias</h2>
             <div class="form-row">
@@ -359,19 +365,19 @@
                     <input type="color" id="categoryColor" value="#3498db">
                 </div>
             </div>
-            
+
             <h3 style="margin-top: 20px; margin-bottom: 15px;">Valores Mensais (R$)</h3>
-            
+
             <div id="monthInputs" class="form-row">
                 <!-- Os inputs para cada mês serão gerados dinamicamente aqui -->
             </div>
-            
+
             <div class="actions">
                 <button id="saveCategory">Salvar Categoria</button>
                 <button id="newCategory" class="btn-secondary">Nova Categoria</button>
                 <button id="deleteCategory" class="btn-delete">Excluir Categoria</button>
             </div>
-            
+
             <div class="import-section">
                 <h3>Importar/Exportar Dados</h3>
                 <div class="form-row">
@@ -386,7 +392,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div id="currentCategoryInfo" class="current-category-info" style="display: none;">
             <h3 id="currentCategoryTitle">Categoria Atual: <span id="currentCategoryName"></span></h3>
             <div class="category-stats">
@@ -408,7 +414,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="charts-container">
             <div class="chart-wrapper">
                 <h3 class="chart-title" id="individualChartTitle">Gráfico da Categoria</h3>
@@ -419,7 +425,7 @@
                     Selecione ou crie uma categoria para visualizar o gráfico.
                 </div>
             </div>
-            
+
             <div class="chart-wrapper">
                 <h3 class="chart-title">Consolidado Anual</h3>
                 <div class="chart-container">
@@ -430,7 +436,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="summary-container">
             <h2 class="chart-title">Resumo Detalhado</h2>
             <div id="annualSummary">
@@ -440,7 +446,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="notification" class="notification"></div>
 
     <script>
@@ -450,7 +456,7 @@
             "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"
         ];
 
-        const monthLabels = months.map(month => 
+        const monthLabels = months.map(month =>
             month.charAt(0).toUpperCase() + month.slice(1)
         );
 
@@ -464,13 +470,13 @@
             initMonthInputs();
             loadCategories();
             updateCategoryForm();
-            
+
             // Configurar eventos
             setupEventListeners();
-            
+
             // Verificar se há dados salvos localmente
             loadFromLocalStorage();
-            
+
             showNotification('Sistema pronto para cadastrar despesas!', 'success');
         }
 
@@ -483,7 +489,7 @@
             document.getElementById('exportData').addEventListener('click', exportData);
             document.getElementById('importData').addEventListener('click', importData);
             document.getElementById('clearAllData').addEventListener('click', clearAllData);
-            
+
             // Salvar dados automaticamente ao modificar
             document.getElementById('saveCategory').addEventListener('click', saveToLocalStorage);
             document.getElementById('deleteCategory').addEventListener('click', saveToLocalStorage);
@@ -493,26 +499,26 @@
         function initMonthInputs() {
             const container = document.getElementById('monthInputs');
             container.innerHTML = '';
-            
+
             // Criar 2 linhas de 6 meses cada
             for (let row = 0; row < 2; row++) {
                 const rowDiv = document.createElement('div');
                 rowDiv.className = 'form-row';
                 rowDiv.id = `monthRow${row}`;
                 container.appendChild(rowDiv);
-                
+
                 for (let col = 0; col < 6; col++) {
                     const monthIndex = row * 6 + col;
                     if (monthIndex >= months.length) break;
-                    
+
                     const month = months[monthIndex];
                     const formGroup = document.createElement('div');
                     formGroup.className = 'form-group';
-                    
+
                     const label = document.createElement('label');
                     label.textContent = month.charAt(0).toUpperCase() + month.slice(1);
                     label.htmlFor = `month-${month}`;
-                    
+
                     const input = document.createElement('input');
                     input.type = 'number';
                     input.id = `month-${month}`;
@@ -520,7 +526,7 @@
                     input.step = '0.01';
                     input.placeholder = '0.00';
                     input.value = '0';
-                    
+
                     formGroup.appendChild(label);
                     formGroup.appendChild(input);
                     rowDiv.appendChild(formGroup);
@@ -533,14 +539,14 @@
             const select = document.getElementById('categorySelect');
             const currentValue = select.value;
             select.innerHTML = '<option value="new">+ Nova Categoria</option>';
-            
+
             for (const category in expenses) {
                 const option = document.createElement('option');
                 option.value = category;
                 option.textContent = category;
                 select.appendChild(option);
             }
-            
+
             // Manter a seleção atual se ainda existir
             if (currentCategory && expenses[currentCategory]) {
                 select.value = currentCategory;
@@ -556,7 +562,7 @@
             const categoryName = document.getElementById('categoryName');
             const colorInput = document.getElementById('categoryColor');
             const deleteBtn = document.getElementById('deleteCategory');
-            
+
             if (select.value === 'new') {
                 categoryName.value = '';
                 colorInput.value = getRandomColor();
@@ -572,7 +578,7 @@
                 fillMonthInputs();
                 updateCurrentCategoryDisplay();
             }
-            
+
             // Atualizar gráfico individual
             renderIndividualChart();
         }
@@ -580,15 +586,15 @@
         // Atualizar exibição da categoria atual
         function updateCurrentCategoryDisplay() {
             const infoDiv = document.getElementById('currentCategoryInfo');
-            
+
             if (!currentCategory || !expenses[currentCategory]) {
                 infoDiv.style.display = 'none';
                 return;
             }
-            
+
             infoDiv.style.display = 'block';
             document.getElementById('currentCategoryName').textContent = currentCategory;
-            
+
             // Calcular estatísticas
             const categoryData = expenses[currentCategory].values;
             const values = months.map(month => categoryData[month] || 0);
@@ -596,7 +602,7 @@
             const average = total / months.length;
             const max = Math.max(...values.filter(v => v > 0));
             const min = Math.min(...values.filter(v => v > 0));
-            
+
             // Atualizar valores
             document.getElementById('currentCategoryTotal').textContent = `R$ ${total.toFixed(2)}`;
             document.getElementById('currentCategoryAverage').textContent = `R$ ${average.toFixed(2)}`;
@@ -607,9 +613,9 @@
         // Preencher os inputs com os valores da categoria atual
         function fillMonthInputs() {
             if (!currentCategory || !expenses[currentCategory]) return;
-            
+
             const categoryData = expenses[currentCategory].values;
-            
+
             for (const month of months) {
                 const input = document.getElementById(`month-${month}`);
                 if (input) {
@@ -642,20 +648,20 @@
             const categoryNameInput = document.getElementById('categoryName');
             const categoryName = categoryNameInput.value.trim();
             const color = document.getElementById('categoryColor').value;
-            
+
             if (!categoryName) {
                 showNotification('Por favor, informe um nome para a categoria', 'error');
                 categoryNameInput.focus();
                 return;
             }
-            
+
             // Coletar valores dos meses
             const values = {};
-            
+
             for (const month of months) {
                 const input = document.getElementById(`month-${month}`);
                 const valueStr = input.value.trim();
-                
+
                 if (valueStr === '') {
                     values[month] = 0;
                 } else {
@@ -668,23 +674,23 @@
                     values[month] = value;
                 }
             }
-            
+
             // Adicionar ou atualizar a categoria
             expenses[categoryName] = {
                 color: color,
                 values: values
             };
-            
+
             // Atualizar a seleção
             currentCategory = categoryName;
             loadCategories();
-            
+
             // Atualizar gráficos
             renderIndividualChart();
             renderAnnualChart();
             renderAnnualSummary();
             updateCurrentCategoryDisplay();
-            
+
             showNotification(`Categoria "${categoryName}" salva com sucesso!`, 'success');
         }
 
@@ -698,12 +704,12 @@
             currentCategory = null;
             updateCurrentCategoryDisplay();
             document.getElementById('categoryName').focus();
-            
+
             // Limpar gráfico individual
             document.getElementById('individualChart').innerHTML = '';
             document.getElementById('noIndividualChartMessage').style.display = 'block';
             document.getElementById('individualChartTitle').textContent = 'Gráfico da Categoria';
-            
+
             showNotification('Preencha os dados para a nova categoria', 'success');
         }
 
@@ -713,16 +719,16 @@
                 showNotification('Nenhuma categoria selecionada', 'error');
                 return;
             }
-            
+
             if (Object.keys(expenses).length <= 1) {
                 showNotification('Não é possível excluir a única categoria existente', 'error');
                 return;
             }
-            
+
             if (confirm(`Tem certeza que deseja excluir a categoria "${currentCategory}"?`)) {
                 const categoryToDelete = currentCategory;
                 delete expenses[categoryToDelete];
-                
+
                 // Selecionar a primeira categoria disponível
                 const categories = Object.keys(expenses);
                 if (categories.length > 0) {
@@ -730,12 +736,12 @@
                 } else {
                     currentCategory = null;
                 }
-                
+
                 loadCategories();
                 updateCategoryForm();
                 renderAnnualChart();
                 renderAnnualSummary();
-                
+
                 showNotification(`Categoria "${categoryToDelete}" excluída com sucesso!`, 'success');
             }
         }
@@ -746,25 +752,25 @@
                 showNotification('Não há dados para exportar', 'error');
                 return;
             }
-            
+
             // Criar objeto com os dados
             const exportObj = {
                 expenses: expenses,
                 exportDate: new Date().toISOString(),
                 meses: months
             };
-            
+
             // Converter para JSON
             const dataStr = JSON.stringify(exportObj, null, 2);
-            const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
-            
+            const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
+
             // Criar link de download
             const exportFileDefaultName = `despesas_${new Date().toISOString().split('T')[0]}.json`;
             const linkElement = document.createElement('a');
             linkElement.setAttribute('href', dataUri);
             linkElement.setAttribute('download', exportFileDefaultName);
             linkElement.click();
-            
+
             showNotification('Dados exportados com sucesso!', 'success');
         }
 
@@ -772,54 +778,54 @@
         function importData() {
             const fileInput = document.getElementById('importFile');
             const file = fileInput.files[0];
-            
+
             if (!file) {
                 showNotification('Selecione um arquivo JSON para importar', 'error');
                 return;
             }
-            
+
             const reader = new FileReader();
-            
-            reader.onload = function(e) {
+
+            reader.onload = function (e) {
                 try {
                     const data = JSON.parse(e.target.result);
-                    
+
                     // Validar estrutura do arquivo
                     if (!data.expenses || typeof data.expenses !== 'object') {
                         throw new Error('Formato de arquivo inválido. O arquivo deve conter dados de despesas.');
                     }
-                    
+
                     // CORREÇÃO: Limpar gráficos existentes antes de importar
                     Plotly.purge('individualChart');
                     Plotly.purge('annualChart');
-                    
+
                     // Importar dados (sobrescrever dados existentes)
                     expenses = data.expenses;
-                    
+
                     // Atualizar interface
                     currentCategory = Object.keys(expenses)[0] || null;
                     loadCategories();
                     updateCategoryForm();
                     renderAnnualChart();
                     renderAnnualSummary();
-                    
+
                     // Salvar no localStorage
                     saveToLocalStorage();
-                    
+
                     showNotification('Dados importados com sucesso!', 'success');
-                    
+
                     // Limpar input de arquivo
                     fileInput.value = '';
-                    
+
                 } catch (error) {
                     showNotification(`Erro ao importar arquivo: ${error.message}`, 'error');
                 }
             };
-            
-            reader.onerror = function() {
+
+            reader.onerror = function () {
                 showNotification('Erro ao ler o arquivo', 'error');
             };
-            
+
             reader.readAsText(file);
         }
 
@@ -827,20 +833,20 @@
         function renderIndividualChart() {
             const container = document.getElementById('individualChart');
             const noChartMessage = document.getElementById('noIndividualChartMessage');
-            
+
             if (!currentCategory || !expenses[currentCategory]) {
                 noChartMessage.style.display = 'block';
                 if (container) container.innerHTML = '';
                 document.getElementById('individualChartTitle').textContent = 'Gráfico da Categoria';
                 return;
             }
-            
+
             noChartMessage.style.display = 'none';
             document.getElementById('individualChartTitle').textContent = `Gráfico: ${currentCategory}`;
-            
+
             const categoryData = expenses[currentCategory];
             const values = months.map(month => categoryData.values[month] || 0);
-            
+
             // Configurar o gráfico
             const trace = {
                 x: monthLabels,
@@ -863,7 +869,7 @@
                 fill: 'tozeroy',
                 fillcolor: categoryData.color.replace(')', ', 0.2)').replace('rgb', 'rgba')
             };
-            
+
             const layout = {
                 title: '',
                 xaxis: {
@@ -886,14 +892,14 @@
                     pad: 10
                 }
             };
-            
+
             const config = {
                 responsive: true,
                 displayModeBar: true,
                 displaylogo: false,
                 modeBarButtonsToRemove: ['pan2d', 'lasso2d', 'select2d']
             };
-            
+
             // Limpar gráfico anterior e criar novo
             Plotly.purge('individualChart');
             Plotly.newPlot('individualChart', [trace], layout, config);
@@ -904,21 +910,21 @@
             const container = document.getElementById('annualChart');
             const noChartMessage = document.getElementById('noAnnualChartMessage');
             const categories = Object.keys(expenses);
-            
+
             if (categories.length === 0) {
                 noChartMessage.style.display = 'block';
                 if (container) container.innerHTML = '';
                 return;
             }
-            
+
             noChartMessage.style.display = 'none';
-            
+
             const traces = [];
-            
+
             for (const category of categories) {
                 const categoryData = expenses[category];
                 const values = months.map(month => categoryData.values[month] || 0);
-                
+
                 traces.push({
                     x: monthLabels,
                     y: values,
@@ -939,7 +945,7 @@
                     }
                 });
             }
-            
+
             const layout = {
                 title: 'Consolidado Anual - Todas as Categorias',
                 xaxis: {
@@ -966,115 +972,332 @@
                     pad: 10
                 }
             };
-            
+
             const config = {
                 responsive: true,
                 displayModeBar: true,
                 displaylogo: false,
                 modeBarButtonsToRemove: ['pan2d', 'lasso2d', 'select2d']
             };
-            
+
             // Limpar gráfico anterior e criar novo
             Plotly.purge('annualChart');
             Plotly.newPlot('annualChart', traces, layout, config);
         }
 
         // Renderizar tabela de resumo anual
+        // Renderizar tabela de resumo anual com estatísticas avançadas
         function renderAnnualSummary() {
             const container = document.getElementById('annualSummary');
             const noSummaryMessage = document.getElementById('noSummaryMessage');
             const categories = Object.keys(expenses);
-            
+
             if (categories.length === 0) {
                 noSummaryMessage.style.display = 'block';
                 container.innerHTML = '';
                 return;
             }
-            
+
             noSummaryMessage.style.display = 'none';
-            
+
             let html = `
-                <table class="summary-table">
-                    <thead>
-                        <tr>
-                            <th>Categoria</th>
-            `;
-            
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+    `;
+
             // Cabeçalho com os meses
             for (const month of months) {
                 html += `<th class="month-header">${month.charAt(0).toUpperCase() + month.slice(1)}</th>`;
             }
-            
-            html += `<th>Total Anual</th><th>Média Mensal</th></tr></thead><tbody>`;
-            
+
+            html += `<th>Total Anual</th><th>Média Mensal</th><th>Desvio Padrão</th><th>Mês Pico</th><th>Mês Vale</th></tr></thead><tbody>`;
+
             // Linhas para cada categoria
             let monthlyTotals = {};
             let categoryTotals = {};
-            
+            let categoryAverages = {};
+            let categoryStdDevs = {};
+            let categoryPeeks = {};
+            let categoryValleys = {};
+            let categoryVariations = {};
+
             // Inicializar totais mensais
             for (const month of months) {
                 monthlyTotals[month] = 0;
             }
-            
+
             // Preencher dados das categorias
             for (const category of categories) {
                 const categoryData = expenses[category];
                 let categoryTotal = 0;
-                
-                html += `<tr><td><strong>${category}</strong></td>`;
-                
+                const values = months.map(month => categoryData.values[month] || 0);
+
+                // Calcular total
                 for (const month of months) {
                     const value = categoryData.values[month] || 0;
                     categoryTotal += value;
                     monthlyTotals[month] += value;
-                    
-                    html += `<td>R$ ${value.toFixed(2)}</td>`;
                 }
-                
+
                 categoryTotals[category] = categoryTotal;
                 const categoryAverage = categoryTotal / months.length;
+                categoryAverages[category] = categoryAverage;
+
+                // Calcular desvio padrão
+                const squaredDiffs = values.map(val => Math.pow(val - categoryAverage, 2));
+                const avgSquaredDiff = squaredDiffs.reduce((a, b) => a + b, 0) / values.length;
+                const stdDev = Math.sqrt(avgSquaredDiff);
+                categoryStdDevs[category] = stdDev;
+
+                // Encontrar mês de pico e vale (ignorando valores zero)
+                const nonZeroValues = values.filter(v => v > 0);
+                let maxValue = nonZeroValues.length > 0 ? Math.max(...nonZeroValues) : 0;
+                let minValue = nonZeroValues.length > 0 ? Math.min(...nonZeroValues) : 0;
+                let maxMonth = '';
+                let minMonth = '';
+
+                if (maxValue > 0) {
+                    const maxIndex = values.indexOf(maxValue);
+                    maxMonth = monthLabels[maxIndex];
+                }
+
+                if (minValue > 0) {
+                    const minIndex = values.indexOf(minValue);
+                    minMonth = monthLabels[minIndex];
+                }
+
+                categoryPeeks[category] = { month: maxMonth, value: maxValue };
+                categoryValleys[category] = { month: minMonth, value: minValue };
+
+                // Calcular variação percentual (mês com maior vs menor)
+                let variation = 0;
+                if (minValue > 0) {
+                    variation = ((maxValue - minValue) / minValue) * 100;
+                }
+                categoryVariations[category] = variation;
+
+                // Renderizar linha da categoria
+                html += `<tr><td><strong>${category}</strong></td>`;
+
+                for (const month of months) {
+                    const value = categoryData.values[month] || 0;
+                    html += `<td>R$ ${value.toFixed(2)}</td>`;
+                }
+
                 html += `<td><strong>R$ ${categoryTotal.toFixed(2)}</strong></td>`;
-                html += `<td>R$ ${categoryAverage.toFixed(2)}</td></tr>`;
+                html += `<td>R$ ${categoryAverage.toFixed(2)}</td>`;
+                html += `<td>R$ ${stdDev.toFixed(2)}</td>`;
+                html += `<td>${maxMonth} (R$ ${maxValue.toFixed(2)})</td>`;
+                html += `<td>${minMonth || '-'} (R$ ${minValue.toFixed(2)})</td></tr>`;
             }
-            
+
             // Linha de totais mensais
             html += `<tr class="total-row"><td><strong>Total por Mês</strong></td>`;
-            
+
             let annualTotal = 0;
+            let maxMonthlyTotal = 0;
+            let maxMonthlyTotalMonth = '';
+
             for (const month of months) {
-                html += `<td><strong>R$ ${monthlyTotals[month].toFixed(2)}</strong></td>`;
-                annualTotal += monthlyTotals[month];
+                const monthTotal = monthlyTotals[month];
+                html += `<td><strong>R$ ${monthTotal.toFixed(2)}</strong></td>`;
+                annualTotal += monthTotal;
+
+                if (monthTotal > maxMonthlyTotal) {
+                    maxMonthlyTotal = monthTotal;
+                    maxMonthlyTotalMonth = month;
+                }
             }
-            
+
             const annualAverage = annualTotal / months.length;
             html += `<td><strong>R$ ${annualTotal.toFixed(2)}</strong></td>`;
-            html += `<td><strong>R$ ${annualAverage.toFixed(2)}</strong></td></tr>`;
-            
+            html += `<td><strong>R$ ${annualAverage.toFixed(2)}</strong></td>`;
+            html += `<td>-</td><td>-</td><td>-</td></tr>`;
+
             html += `</tbody></table>`;
+
+            // ===== ESTATÍSTICAS AVANÇADAS =====
+html += `
+    <div style="margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 10px; border-left: 4px solid #3498db;">
+        <h3 style="margin-bottom: 20px; color: #2c3e50; display: flex; align-items: center; gap: 10px;">
+            📊 Estatísticas Gerais Avançadas
+        </h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 25px;">
+            <!-- Total e Média -->
+            <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                    <span style="font-size: 20px;">💰</span>
+                    <h4 style="margin: 0; color: #2c3e50;">Visão Geral</h4>
+                </div>
+                <div><strong>Total Geral Anual:</strong> <span style="color: #2c3e50;">R$ ${annualTotal.toFixed(2)}</span></div>
+                <div><strong>Média Mensal Total:</strong> <span style="color: #2c3e50;">R$ ${annualAverage.toFixed(2)}</span></div>
+                <div><strong>Total de Categorias:</strong> <span style="color: #2c3e50;">${categories.length}</span></div>
+            </div>
             
-            // Adicionar estatísticas
-            html += `
-                <div style="margin-top: 20px; padding: 15px; background-color: #f8f9fa; border-radius: 5px;">
-                    <h3 style="margin-bottom: 10px;">Estatísticas Gerais</h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-                        <div>
-                            <strong>Total Geral Anual:</strong> R$ ${annualTotal.toFixed(2)}
-                        </div>
-                        <div>
-                            <strong>Média Mensal Total:</strong> R$ ${annualAverage.toFixed(2)}
-                        </div>
-                        <div>
-                            <strong>Total de Categorias:</strong> ${categories.length}
-                        </div>
-                        <div>
-                            <strong>Mês com Maior Gasto:</strong> ${monthLabels[Object.keys(monthlyTotals).reduce((a, b) => monthlyTotals[a] > monthlyTotals[b] ? a : b, 0)]} (R$ ${Math.max(...Object.values(monthlyTotals)).toFixed(2)})
-                        </div>
+            <!-- Mês de Pico e Vale - CORRIGIDO -->
+            <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                    <span style="font-size: 20px;">📈</span>
+                    <h4 style="margin: 0; color: #2c3e50;">Sazonalidade</h4>
+                </div>
+                <div><strong>Mês de Maior Gasto:</strong> <span style="color: #e74c3c; font-weight: 600;">${(() => {
+                    // Encontrar o mês com maior gasto
+                    let maxMonth = '';
+                    let maxValue = 0;
+                    for (const month of months) {
+                        const value = monthlyTotals[month] || 0;
+                        if (value > maxValue) {
+                            maxValue = value;
+                            maxMonth = month;
+                        }
+                    }
+                    return `${monthLabels[months.indexOf(maxMonth)]} (R$ ${maxValue.toFixed(2)})`;
+                })()}</span></div>
+                <div><strong>Mês de Menor Gasto:</strong> <span style="color: #2ecc71; font-weight: 600;">${(() => {
+                    // Encontrar o mês com menor gasto
+                    let minMonth = '';
+                    let minValue = Infinity;
+                    for (const month of months) {
+                        const value = monthlyTotals[month] || 0;
+                        if (value < minValue && value > 0) {
+                            minValue = value;
+                            minMonth = month;
+                        }
+                    }
+                    // Se não encontrou nenhum mês com gasto > 0, usar o primeiro mês
+                    if (!minMonth) {
+                        minMonth = months[0];
+                        minValue = 0;
+                    }
+                    return `${monthLabels[months.indexOf(minMonth)]} (R$ ${minValue.toFixed(2)})`;
+                })()}</span></div>
+                <div><strong>Variação Anual:</strong> <span style="color: #f39c12; font-weight: 600;">${(() => {
+                    const maxVal = Math.max(...Object.values(monthlyTotals));
+                    const minVal = Math.min(...Object.values(monthlyTotals));
+                    return minVal > 0 ? `${((maxVal - minVal) / minVal * 100).toFixed(1)}%` : 'N/A';
+                })()}</span></div>
+            </div>
+            
+            <!-- Categoria Dominante -->
+            <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                    <span style="font-size: 20px;">🏆</span>
+                    <h4 style="margin: 0; color: #2c3e50;">Destaques</h4>
+                </div>
+                <div><strong>Categoria com Maior Gasto:</strong> <span style="color: #e74c3c; font-weight: 600;">${Object.keys(categoryTotals).reduce((a, b) => categoryTotals[a] > categoryTotals[b] ? a : b, '')}</span> (R$ ${Math.max(...Object.values(categoryTotals)).toFixed(2)})</div>
+                <div><strong>Categoria com Menor Gasto:</strong> <span style="color: #2ecc71; font-weight: 600;">${Object.keys(categoryTotals).reduce((a, b) => categoryTotals[a] < categoryTotals[b] ? a : b, '')}</span> (R$ ${Math.min(...Object.values(categoryTotals)).toFixed(2)})</div>
+                <div><strong>Diferença entre Maior/Menor:</strong> <span style="color: #9b59b6; font-weight: 600;">R$ ${(Math.max(...Object.values(categoryTotals)) - Math.min(...Object.values(categoryTotals))).toFixed(2)}</span></div>
+            </div>
+        </div>
+        
+        <!-- Análise Detalhada por Categoria -->
+        <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px;">
+            <h4 style="margin-bottom: 15px; color: #2c3e50;">📋 Análise Detalhada por Categoria</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px;">
+`;
+
+// Adicionar análise detalhada para cada categoria
+for (const category of categories) {
+    const total = categoryTotals[category];
+    const average = categoryAverages[category];
+    const stdDev = categoryStdDevs[category];
+    const peek = categoryPeeks[category];
+    const valley = categoryValleys[category];
+    const variation = categoryVariations[category];
+    const percentage = annualTotal > 0 ? (total / annualTotal) * 100 : 0;
+    
+    // Determinar se a categoria é estável ou volátil
+    const volatility = average > 0 ? stdDev / average : 0;
+    let volatilityLabel = 'Estável';
+    let volatilityColor = '#2ecc71';
+    if (volatility > 0.5) {
+        volatilityLabel = 'Alta Volatilidade';
+        volatilityColor = '#e74c3c';
+    } else if (volatility > 0.3) {
+        volatilityLabel = 'Volatilidade Média';
+        volatilityColor = '#f39c12';
+    }
+    
+    html += `
+        <div style="border: 1px solid #e1e4e8; padding: 12px; border-radius: 6px; background-color: #fafbfc;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                <span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background-color: ${expenses[category].color};"></span>
+                <strong style="color: #2c3e50;">${category}</strong>
+                <span style="margin-left: auto; font-size: 12px; background: ${volatilityColor}20; color: ${volatilityColor}; padding: 2px 8px; border-radius: 12px; font-weight: 600;">${volatilityLabel}</span>
+            </div>
+            <div style="font-size: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px;">
+                <div><span style="color: #7f8c8d;">Total:</span> <strong>R$ ${total.toFixed(2)}</strong></div>
+                <div><span style="color: #7f8c8d;">% do Total:</span> <strong>${percentage.toFixed(1)}%</strong></div>
+                <div><span style="color: #7f8c8d;">Média:</span> R$ ${average.toFixed(2)}</div>
+                <div><span style="color: #7f8c8d;">Desvio:</span> R$ ${stdDev.toFixed(2)}</div>
+                <div><span style="color: #7f8c8d;">Pico:</span> ${peek.month ? monthLabels[months.indexOf(peek.month)] : '-'} (R$ ${peek.value.toFixed(2)})</div>
+                <div><span style="color: #7f8c8d;">Vale:</span> ${valley.month ? monthLabels[months.indexOf(valley.month)] : '-'} (R$ ${valley.value.toFixed(2)})</div>
+                <div style="grid-column: 1 / -1;"><span style="color: #7f8c8d;">Variação Pico/Vale:</span> <strong style="color: ${variation > 100 ? '#e74c3c' : '#2ecc71'};">${variation.toFixed(1)}%</strong></div>
+            </div>
+        </div>
+    `;
+}
+
+html += `
+            </div>
+        </div>
+        
+        <!-- Índice de Concentração (Herfindahl) -->
+        <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <h4 style="margin-bottom: 10px; color: #2c3e50;">📊 Índice de Concentração</h4>
+`;
+
+// Calcular Índice de Herfindahl (concentração de gastos)
+let herfindahl = 0;
+for (const category of categories) {
+    const percentage = (categoryTotals[category] / annualTotal);
+    herfindahl += Math.pow(percentage, 2);
+}
+
+let concentrationLevel = 'Pulverizado';
+let concentrationColor = '#2ecc71';
+if (herfindahl > 0.4) {
+    concentrationLevel = 'Alta Concentração';
+    concentrationColor = '#e74c3c';
+} else if (herfindahl > 0.25) {
+    concentrationLevel = 'Concentração Média';
+    concentrationColor = '#f39c12';
+}
+
+html += `
+            <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+                <div>
+                    <div style="font-size: 14px; color: #7f8c8d;">Índice de Herfindahl (0-1):</div>
+                    <div style="font-size: 24px; font-weight: 700; color: ${concentrationColor};">${herfindahl.toFixed(3)}</div>
+                </div>
+                <div>
+                    <div style="font-size: 14px; color: #7f8c8d;">Nível de Concentração:</div>
+                    <div style="font-size: 20px; font-weight: 600; color: ${concentrationColor};">${concentrationLevel}</div>
+                </div>
+                <div style="flex: 1; min-width: 150px;">
+                    <div style="background: #ecf0f1; height: 8px; border-radius: 4px; overflow: hidden;">
+                        <div style="background: linear-gradient(to right, #2ecc71, #f39c12, #e74c3c); height: 100%; width: ${Math.min(herfindahl * 100, 100)}%;"></div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; font-size: 11px; color: #7f8c8d; margin-top: 4px;">
+                        <span>Pulverizado</span>
+                        <span>Concentrado</span>
                     </div>
                 </div>
-            `;
-            
-            container.innerHTML = html;
+                <div style="background: #f8f9fa; padding: 8px 12px; border-radius: 4px; font-size: 13px; color: #2c3e50;">
+                    <strong>Interpretação:</strong> ${herfindahl <= 0.25 ? 'Gastos bem distribuídos entre as categorias' : herfindahl <= 0.4 ? 'Algumas categorias têm peso maior' : 'Poucas categorias dominam os gastos'}
+                </div>
+            </div>
+        </div>
+    </div>
+`;
+
+container.innerHTML = html;
         }
+
+
 
         // Salvar dados no localStorage
         function saveToLocalStorage() {
@@ -1097,14 +1320,14 @@
                     const data = JSON.parse(savedData);
                     if (data.expenses && typeof data.expenses === 'object') {
                         expenses = data.expenses;
-                        
+
                         if (Object.keys(expenses).length > 0) {
                             currentCategory = Object.keys(expenses)[0];
                             loadCategories();
                             updateCategoryForm();
                             renderAnnualChart();
                             renderAnnualSummary();
-                            
+
                             showNotification('Dados carregados do armazenamento local!', 'success');
                         }
                     }
@@ -1119,11 +1342,11 @@
             if (confirm('Tem certeza que deseja limpar TODOS os dados? Esta ação não pode ser desfeita.')) {
                 expenses = {};
                 currentCategory = null;
-                
+
                 // Limpar interface
                 loadCategories();
                 updateCategoryForm();
-                
+
                 // Limpar gráficos
                 Plotly.purge('individualChart');
                 Plotly.purge('annualChart');
@@ -1135,10 +1358,10 @@
                 document.getElementById('annualSummary').innerHTML = '';
                 document.getElementById('currentCategoryInfo').style.display = 'none';
                 document.getElementById('individualChartTitle').textContent = 'Gráfico da Categoria';
-                
+
                 // Limpar localStorage
                 localStorage.removeItem('despesasData');
-                
+
                 showNotification('Todos os dados foram limpos!', 'success');
             }
         }
@@ -1148,11 +1371,11 @@
             const notification = document.getElementById('notification');
             notification.textContent = message;
             notification.className = `notification ${type}`;
-            
+
             setTimeout(() => {
                 notification.classList.add('show');
             }, 10);
-            
+
             setTimeout(() => {
                 notification.classList.remove('show');
             }, 3000);
@@ -1162,4 +1385,5 @@
         document.addEventListener('DOMContentLoaded', initApp);
     </script>
 </body>
+
 </html>
